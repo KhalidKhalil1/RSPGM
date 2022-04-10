@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSP Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body style="background-color: gray;">
+    <div class="container">
+
+        <div class="row rounded">
+            <div class="col-12 ">
+                <div class="jumbotron jumbotron-fluid bg-light rounded">
+                    <div class=" container d-flex flex-column align-items-center ">
+                        <h1>Rock Paper Scissors</h1>
+                        <p>Please select one of the 'R S P' (press) buttons to play </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PLAY AREA -->
+        <div class="row " id="sectionPlayPanel1">
+            <div class="col">
+                <div class="jumbotron jumbotron-fluid bg-light rounded">
+                    <div class="container  d-flex flex-column align-items-center">
+                        <h1 class="display-5 text-center text-secondary" id="winGame1">BEGIN</h1>
+                        <h1>Player 1 (ME)</h1>
+                        <P class=" h4 text-success" id="player1ScorePanel">Point:</P>
+                    </div>
+                </div>
+
+
+                <!-- cards -->
+                <div class="card">
+                    <img id="player1Img" src="./img/p.png" class="card-img-top" style="width: 200px;height: 150px;">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <p class="display-1 text-white text-center">VS</p>
+            </div>
+            <!-- user comp -->
+            <div class="col">
+                <div class="jumbotron jumbotron-fluid bg-light rounded">
+                    <div class="container  d-flex flex-column align-items-center">
+                        <h1 class="display-5 text-center text-secondary" id="winGame2">BEGIN</h1>
+                        <h1>Player 2 (COMP)</h1>
+                        <P class=" h4 text-success" id="player2ScorePanel">Point:</P>
+                    </div>
+                </div>
+
+
+                <!-- cards -->
+                <div class="card">
+                    <img id="player2Img" src="./img/s.png" class="card-img-top" style="width: 200px;height: 150px; transform: rotateY(-180deg);">
+                    <div class="card-body">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
