@@ -41,7 +41,8 @@ function startGame(e) {
         player1Score++
 
         player1ScorePanel.innerHTML = `Point: ${player1Score}`
-
+        winInfoPanel1.setAttribute("class","h1 text-success")
+        winInfoPanel2.setAttribute("class","h1 text-danger")
         winInfoPanel1.innerHTML = 'WIN'
         winInfoPanel2.innerHTML = 'LOSE'
     } else if (userAttack === 's' && compAttack === 'p') {
@@ -52,7 +53,8 @@ function startGame(e) {
         player1Score++
 
         player1ScorePanel.innerHTML = `Point: ${player1Score}`
-
+        winInfoPanel1.setAttribute("class","h1 text-success")
+        winInfoPanel2.setAttribute("class","h1 text-danger")
         winInfoPanel1.innerHTML = 'WIN'
         winInfoPanel2.innerHTML = 'LOSE'
     } else if (userAttack === 'p' && compAttack === 'r') {
@@ -62,7 +64,8 @@ function startGame(e) {
 
         player1Score++
         player1ScorePanel.innerHTML = `Point: ${player1Score}`
-
+        winInfoPanel1.setAttribute("class","h1 text-success")
+        winInfoPanel2.setAttribute("class","h1 text-danger")
         winInfoPanel1.innerHTML = 'WIN'
         winInfoPanel2.innerHTML = 'LOSE'
     } else {
